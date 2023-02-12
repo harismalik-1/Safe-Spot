@@ -1,0 +1,92 @@
+body {
+    font-family: 'Inter';
+    font-size: 11pt;
+    text-decoration: none;
+}
+.general {
+    padding: 5%;
+    background-color: #ffffff;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  padding: 5%;
+  background-color: white;
+}
+.camera-box {
+  width: 45%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.camera-frame {
+  width: 100%;
+  padding-bottom: 75%; /* maintaining aspect ratio of 4:3 */
+  position: relative;
+}
+.camera-frame iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.camera-frame .title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #375578;
+  color: #fff;
+  padding: 5px 10px;
+}
+.camera-description1 {
+  margin-top: 0px;
+  background-color: #DDEDFF;
+  padding: 10px;
+  border-radius: 0 0 0 20px;
+  flex: 45%;
+}
+.camera-description2 {
+    margin-top: 0px;
+    background-color: #BCD8F7;
+    padding: 10px;
+    border-radius: 0 0 20px 0;
+    flex: 45%;
+  }
+.row{
+    display: flex;
+}
+.description1 {
+    margin-top: 0px;
+    border-radius: 0 0 0 20px;
+    padding-left: 10px;
+    flex: 25%;
+  }
+  .description2 {
+    margin-top: 0px;
+    background-color: #DDEDFF;
+    border-radius: 0 0 0 20px;
+    padding-left: 10px;
+    flex: 75%;
+  }
+.row2{
+    display: flex;
+}
+.title {
+  z-index: 100;
+  border: 0px;
+  border-radius: 9px 0 20px 0;
+  display: flex;
+  column-gap: 10px;
+}
+.logo-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 2%;
+    padding-left: 2%;
+    z-index: 101;
+  }
